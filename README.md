@@ -9,7 +9,6 @@ The game uses HTML for the structure, CSS for styling, and JavaScript for the ga
 
 ![Sudoku Game Screenshot](sudoko_board.png)
 
-Number palette
 ![Number Palette Screenshot](number_palette.png)
 
 ## Features
