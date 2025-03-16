@@ -32,7 +32,7 @@ The game uses HTML for the structure, CSS for styling, and JavaScript for the ga
 
 ## Setup and Installation
 1. Download or clone the repository to your local machine.
-2. Open the `index.html` file in your browser to start playing the game.
+2. Open the `sudoku.html` file in your browser to start playing the game.
 3. Navigate to the `high-scores.html` page to view the high scores.
 
 ## Future Improvements
