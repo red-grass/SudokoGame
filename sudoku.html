@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku - Play a Game</title>
+
+    <link rel="stylesheet" href="styles/sudoku.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="images/logo.gif" width="60" height="70" />
+        </a>
+        <!-- Burger Item -->
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onclick="toggleMenu()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- Navbar Menu -->
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">Sudoko Centre</a>
+          <a class="navbar-item" href="sudoku.html">Play Game</a>
+          <a class="navbar-item" href="high_scores.html">High Scores</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <table id="board">
+        <!-- Hardcoded Sudoku board -->
+        <tbody>
+          <!-- Rows -->
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>8</td>
+            <td></td>
+            <td></td>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>4</td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>3</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>6</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>8</td>
+            <td></td>
+            <td></td>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>8</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Number Palette -->
+
+      <table id="number-palette">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>
+            <img src="images/undo.png" alt="Undo" width="30" height="30" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="scripts/sudoku.js"></script>
+  </body>
+</html>

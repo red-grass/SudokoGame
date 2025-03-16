@@ -1,0 +1,113 @@
+/* add your styling and layout CSS here */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+#board {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#board td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+td:hover {
+  background-color: #f5dd90;
+}
+
+.container {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board tr:nth-child(3n) td {
+  border-bottom: 3px solid black;
+}
+
+#board td:nth-child(3n) {
+  border-right: 3px solid black;
+}
+
+#number-palette {
+  margin-top: 20px;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+#number-palette td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#number-palette img {
+  width: 30px;
+  height: 30px;
+}
+
+.user-input {
+  background-color: #f2f2f2;
+}
+
+.error {
+  background-color: #f76c5e !important;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-burger span {
+  background-color: white !important;
+}
+
+.highscores-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.highscores-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.highscores-table th,
+.highscores-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.highscores-table th {
+  font-weight: bold;
+}

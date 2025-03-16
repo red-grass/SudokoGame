@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku - High Scores</title>
+    <!-- reference your stylesheet here -->
+    <link rel="stylesheet" href="styles/sudoku.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="images/logo.gif" width="60" height="70" />
+        </a>
+        <!-- Burger Item -->
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onclick="toggleMenu()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- Navbar Menu -->
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">Sudoko Centre</a>
+          <a class="navbar-item" href="sudoko.html">Play Game</a>
+          <a class="navbar-item" href="high_scores.html">High Scores</a>
+        </div>
+      </div>
+    </nav>
+    <!-- your content goes here -->
+    <div class="container highscores-container">
+      <h2 class="title is-4">High Scores</h2>
+      <table class="table highscores-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody id="highscores-body">
+          <!-- insert highscores using dynamic array -->
+        </tbody>
+      </table>
+    </div>
+    <script src="scripts/high_scores.js"></script>
+  </body>
+</html>
