@@ -7,6 +7,11 @@ This project is a web-based Sudoku game consisting of two pages:
 
 The game uses HTML for the structure, CSS for styling, and JavaScript for the game logic. The board is represented as a 9x9 table with hardcoded values for the initial setup. The game uses the **Bulma CSS framework** to ensure a responsive design that adjusts for both desktop and mobile views. It follows a clean and simple design for an engaging user experience.
 
+![Sudoku Game Screenshot](sudoko_board.png)
+
+Number palette
+![Number Palette Screenshot](number_palette.png)
+
 ## Features
 - **Sudoku Board**: A 9x9 table styled with Bulma CSS and displayed in the center of the page.
 - **Responsive Design**: The game adapts seamlessly to both desktop and mobile screens.
